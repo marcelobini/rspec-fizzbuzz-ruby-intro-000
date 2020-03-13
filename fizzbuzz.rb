@@ -1,10 +1,15 @@
 # Don't forget! This file needs to be 'required' in its spec file
 # See README.md for instructions on how to do this
-def fizzbuzz?(num)
-  case
-  when num % 15 == 0 then "FizzBuzz"
-  when num % 3  == 0 then "Fizz"
-  when num % 5  == 0 then "Buzz"
-  else num
+def fizzbuzz(num)
+  1.upto(num).each do |x|
+    if x%3 == 0 && x%5 == 0
+      p "fizzbuzz"
+    elsif x % 5 == 0
+      p "buzz"
+    elsif x % 3 == 0
+      p "fizz"
+    else
+      p x
+    end
   end
 end
