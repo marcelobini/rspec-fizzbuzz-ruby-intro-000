@@ -11,7 +11,7 @@ def fizzbuzz(number)
             puts "Fizz"
         when divisibleBy5
             puts "Buzz"
-        else 
+        else
             puts number
     end
 end
